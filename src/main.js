@@ -7,6 +7,8 @@ import VueResource from'vue-resource'
 import  Goods from './components/goods/goods.vue'
 import Seller from './components/seller/seller.vue'
 import Ratings from './components/ratings/ratings.vue'
+
+
 Vue.use(VueRouter);
 Vue.use(VueResource);
 const routes = [

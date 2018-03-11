@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-header :seller="seller"></v-header>
-    <div class="tab">
+    <div class="tab border-1px">
       <div class="tab-item">
         <router-link  to="/goods">商品</router-link>
       </div>
@@ -46,13 +46,14 @@ export default{
 </script>
 
 <style  lang="less" rel="stylesheet/less">
+@import "./common/less/mixin1";
 .tab{
   display: flex;
   flex-direction:row;
   width: 100%;
   height :40px;
   line-height: 40px;
-  border-bottom: 1px solid #7e8c8d;
+
 
   .tab-item{
     flex: 1;
@@ -64,7 +65,9 @@ export default{
   color: red;
 }
 
-
+.border-1px{
+  .border_1px(black)
+}
 
 
 </style>
